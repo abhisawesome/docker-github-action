@@ -12,5 +12,6 @@ jobs:
             - name: build 
               run: |
                 docker build -t my_image:latest .
+                docker run my_image:latest
 
 
