@@ -1,5 +1,4 @@
-name: Build and Deploy release
-
+name: Build
 on:
   push:
     branches: [main]
