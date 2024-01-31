@@ -1,0 +1,16 @@
+name: Build and Deploy release
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - name: build 
+              run: |
+                docker build -t my_image:latest .
+
+
